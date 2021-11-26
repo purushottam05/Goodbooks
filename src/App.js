@@ -4,28 +4,39 @@ import { useState } from "react";
 
 const bookDB = {
   non_fiction: [
-    { name: "Ikigai", rating: "4/5" },
-    { name: "Atomic habits", rating: "5/5" }
+    { name: "Ikigai", 
+      rating: "4/5",
+      description : "Ikigai is the art of doing something and doing it with supreme focus and joy."
+    },
+
+    { name: "Atomic habits", 
+      rating: "5/5", 
+      description : "Tiny Changes, Remarkable Results No matter your goals, Atomic Habits offers a proven framework for improving every day"
+    }
   ],
 
   fiction: [
     {
       name: "Lord of the Rings",
-      rating: "5/5"
+      rating: "5/5",
+      description : "The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien."
     },
     {
       name: "Harry Potter and the Sorcerer's Stone",
-      rating: "4.5/5"
+      rating: "4.5/5",
+      description : "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him."
     }
   ],
   business: [
     {
       name: "Rich dad poor dad",
-      rating: "5/5"
+      rating: "5/5",
+      description :"Rich Dad Poor Dad is a 1997 book written by Robert Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy, financial independence and building wealth through investing in assets, real estate investing."
     },
     {
       name: "Loonshots",
-      rating: "5/5"
+      rating: "5/5",
+      description : "How to Nurture the Crazy Ideas That Win Wars, Cure Diseases, and Transform Industries."
     }
   ]
 };
@@ -40,7 +51,7 @@ export default function App() {
       <h1>  Goodbooks </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
-        hey, Checkout some of my favorite books. Select a genre to get started{" "}
+        Hey, Checkout some of my favorite books. Select a genre to get started{" "}
       </p>
 
       <div>
@@ -78,6 +89,7 @@ export default function App() {
               {" "}
               <div style={{ fontSize: "larger" }}> {book.name} </div>
               <div style={{ fontSize: "smaller" }}> {book.rating} </div>
+              <div style={{ fontSize: "smaller" }}> {book.description} </div>
             </li>
           ))}
         </ul>
