@@ -68,7 +68,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>  Goodbooks </h1>
+      <h1>  BookHub </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
         Here are some of my recent read books. Select a genre to get started{" "}
