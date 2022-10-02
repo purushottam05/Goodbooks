@@ -12,7 +12,13 @@ const bookDB = {
     { name: "Atomic habits", 
       rating: "5/5", 
       description : "Tiny Changes, Remarkable Results No matter your goals, Atomic Habits offers a proven framework for improving every day"
+    },
+
+    { name: "Deep Work", 
+      rating: "4/5", 
+      description : "Wrking on how to better your productivity by working less hours and focusing on improving your skillsets"
     }
+
   ],
 
   fiction: [
@@ -25,7 +31,14 @@ const bookDB = {
       name: "Harry Potter and the Sorcerer's Stone",
       rating: "4.5/5",
       description : "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him."
+    },
+
+    {
+      name: "Star Wars",
+      rating: "4/5",
+      description : "Star Wars is an American epic space opera multimedia franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon.."
     }
+
   ],
   business: [
     {
@@ -37,7 +50,14 @@ const bookDB = {
       name: "Loonshots",
       rating: "5/5",
       description : "How to Nurture the Crazy Ideas That Win Wars, Cure Diseases, and Transform Industries."
+    },
+
+    {
+      name: "How to win friends and influence people",
+      rating: "4/5",
+      description : "How to Win Friends and Influence People is a 1936 self-help book written by Dale Carnegie. Over 30 million copies have been sold worldwide, making it one of the best-selling books of all time. Carnegie had been conducting business education courses in New York since 1912."
     }
+
   ]
 };
 
@@ -51,7 +71,7 @@ export default function App() {
       <h1>  Goodbooks </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
-        Hey, Checkout some of my favorite books. Select a genre to get started{" "}
+        Here are some of my recent read books. Select a genre to get started{" "}
       </p>
 
       <div>

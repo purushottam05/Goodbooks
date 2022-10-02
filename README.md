@@ -1,3 +1,3 @@
 # Goodbooks
 
-Checkout my reviews on few books.
+my reviews on couple of books.
